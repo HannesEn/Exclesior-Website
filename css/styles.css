@@ -1,0 +1,163 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-container {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  height: 70vh;
+  opacity: 0.9;
+}
+
+.logo {
+  width: 450px;
+  position: relative;
+  z-index: 1;
+  top: -75px;
+}
+
+.subheading {
+  color: #000;
+  font-size: 15px;
+  position: relative;
+  top: -285px;
+  font-weight: 400;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+#about,
+#contact {
+  margin-bottom: 40px;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .logo-container {
+    width: 90vw;
+  }
+}
+
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  margin-top: 100px;
+}
+
+.mission-content {
+  flex: 1;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.mission-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.mission-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;
+  }
+
+  .mission-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .mission-image {
+    max-width: 100%;
+  }
+}
+
+.mission-quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  border-left: 4px solid #ffd700;
+  padding-left: 20px;
+  margin-left: 0;
+  color: #e0e0e0;
+}
+
+.mission-quote p::before {
+  content: "\201C";
+  font-size: 3rem;
+  color: #ffd700;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+}
+
+.mission-quote p::after {
+  content: "\201D";
+  font-size: 3rem;
+  color: #ffd700;
+  position: absolute;
+  right: -10px;
+  bottom: -40px;
+}
+
+.mission-content {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.mission-content p {
+  max-width: 60%;
+}
+.mission-quote p {
+  position: relative;
+  padding: 10px;
+}
