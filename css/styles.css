@@ -88,6 +88,18 @@ footer {
   .logo-container {
     width: 90vw;
   }
+  .logo {
+    width: 300px;
+  }
+  .subheading {
+    top: -200px;
+  }
+  .mission-content {
+    padding-right: 0px;
+  }
+  .mission-content p {
+    max-width: 100%;
+  }
 }
 
 .mission-section {
@@ -121,6 +133,10 @@ footer {
   opacity: 1;
 }
 
+.mission-content p {
+  max-width: 60%;
+}
+
 @media (max-width: 768px) {
   .mission-section {
     flex-direction: column;
@@ -131,8 +147,13 @@ footer {
     margin-bottom: 20px;
   }
 
+  .mission-content p {
+    max-width: 100%;
+  }
+
   .mission-image {
     max-width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -171,9 +192,6 @@ footer {
   border-radius: 10px;
 }
 
-.mission-content p {
-  max-width: 60%;
-}
 .mission-quote p {
   position: relative;
   padding: 10px;
