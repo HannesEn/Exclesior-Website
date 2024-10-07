@@ -23,7 +23,16 @@ header {
   background-position: center;
   padding: 40px 0;
   height: 70vh;
-  opacity: 0.9;
+  opacity: 0;
+  border: 1px solid #ffffff2c;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.logo-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
 }
 
 .logo {
@@ -31,6 +40,10 @@ header {
   position: relative;
   z-index: 1;
   top: -75px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 0.5s forwards;
 }
 
 .subheading {
@@ -39,6 +52,10 @@ header {
   position: relative;
   top: -285px;
   font-weight: 400;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out 1s forwards;
 }
 
 main {
@@ -160,4 +177,17 @@ footer {
 .mission-quote p {
   position: relative;
   padding: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

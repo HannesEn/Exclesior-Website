@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="images/icon.png" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self' 'unsafe-inline';"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://unpkg.com 'unsafe-inline';"
     />
   </head>
   <body>
@@ -41,7 +41,8 @@
         <h2>Contact Us</h2>
         <p>
           For inquiries or investment opportunities, please email us at
-          <a href="mailto:contact@excelsior.com">excelsior.bio@protonmail.com</a
+          <a href="mailto:excelsior.bio@protonmail.com"
+            >excelsior.bio@protonmail.com</a
           >.
         </p>
       </section>
@@ -49,5 +50,7 @@
     <footer>
       <p>&copy; 2024 Excelsior. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
